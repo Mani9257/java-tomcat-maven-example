@@ -68,4 +68,10 @@
         </plugin>
     </plugins>
   </build>
+	<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <url>http://18.220.34.185:8081/nexus/content/repositories/releases</url>
+  </repository>
+</distributionManagement>
 </project>
