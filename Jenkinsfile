@@ -1,9 +1,7 @@
 pipeline
 {
        agent any
-       environment {
-              PATH = "C:/apache-maven-3.6.2/bin:$PATH"
-       }
+       
        stages{
               stage("git"){
                      steps{
@@ -13,7 +11,7 @@ pipeline
               stage("build"){
                      
                      steps{
-                           bat label: '', script: 'mvn clean install package'
+                           bat "C:/apache-maven-3.6.2/bin/mvn clean install"
                      }
               }
        }
