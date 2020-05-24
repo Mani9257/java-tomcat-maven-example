@@ -6,8 +6,8 @@ node{
       }  
       stage('Build'){
          //// Get maven home path and build
-            def mvnHome = tool name: 'MAVEN-HOME', type: 'maven'
-        sh '${mvnHome}/bin/mvn clean install -Dmaven.test.skip=true'
+            /// def mvnHome = tool name: 'MAVEN-HOME', type: 'maven'
+       sh label: '', script: 'C:\\apache-maven-3.6.2\\bin\\mvn clean install '
       }
      stage ('Test-JUnit'){
          sh "'${mvnHome}/bin/mvn' test surefire-report:report"
