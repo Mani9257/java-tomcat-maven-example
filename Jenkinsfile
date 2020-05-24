@@ -11,11 +11,9 @@ pipeline
                      }
               }
               stage("build"){
-                     withMaven(jdk: 'JAVA_HOME', maven: 'MAVEN-HOME') {
-    // some block
-}
+                     
                      steps{
-                            bat "mvn clean install"
+                           bat label: '', script: 'mvn clean install package'
                      }
               }
        }
