@@ -2,7 +2,7 @@ pipeline
 {
        agent any
        environmant{
-              PATH = "C:\apache-maven-3.6.2\bin:$PATH"
+              PATH = "C:/apache-maven-3.6.2/bin:$PATH"
        }
        stages{
               stage("git"){
