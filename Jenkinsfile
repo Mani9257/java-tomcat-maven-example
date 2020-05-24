@@ -11,7 +11,7 @@ pipeline
               stage("build"){
                      
                      steps{
-                            def mvnHome = tool 'MAVEN-HOME'
+                            
                             bat "${mvnHome}\\bin\\mvn clean install"
                      }
               }
