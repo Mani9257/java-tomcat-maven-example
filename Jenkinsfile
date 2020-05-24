@@ -12,7 +12,7 @@ pipeline
                      
                      steps{
                             
-                            bat "${mvnHome}\\bin\\mvn clean install"
+                            bat "C:\\apache-maven-3.6.2\\bin\\mvn clean install"
                      }
               }
        }
