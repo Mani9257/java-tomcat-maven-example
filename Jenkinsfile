@@ -11,7 +11,8 @@ pipeline
               stage("build"){
                      
                      steps{
-                           bat "C:/apache-maven-3.6.2/bin/mvn clean install"
+                            def mvnHome = tool name: 'MAVEN-HOME', type: 'maven'
+                            bat "${mvnHome}\\bin\\mvn clean install"
                      }
               }
        }
