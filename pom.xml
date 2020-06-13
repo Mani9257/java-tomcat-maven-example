@@ -70,8 +70,8 @@
   </build>
 <distributionManagement>
   <snapshotRepository>
-    <id>snapshots</id>
-    <url>http://18.222.127.15:8081/nexus/content/repositories/snapshots</url>
+    <id>nexusdeployementrepo</id>
+    <url>http://localhost:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
 </project>
