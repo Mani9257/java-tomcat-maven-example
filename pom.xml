@@ -71,6 +71,7 @@
 <distributionManagement>
   <repository>
     <id>thirdparty</id>
+    <name>3rd party</name>
     <url>http://18.222.127.15:8081/nexus/content/repositories/thirdparty</url>
   </repository>
 </distributionManagement>
