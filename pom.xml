@@ -70,8 +70,8 @@
   </build>
 <distributionManagement>
   <repository>
-    <id>apache-snapshots</id>
-    <url>http://18.222.127.15:8081/nexus/content/repositories/apache-snapshots/</url>
+    <id>thirdparty</id>
+    <url>http://18.222.127.15:8081/nexus/content/repositories/thirdparty</url>
   </repository>
 </distributionManagement>
 </project>
