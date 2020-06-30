@@ -17,7 +17,7 @@
     }
     
     stage("Quality Gate Status Check"){
-          timeout(time: 2, unit: 'minutes') {
+          timeout(time: 30, unit: 'seconds') {
               def qg = waitForQualityGate()
               if (qg.status != 'OK') {
                    // slackSend baseUrl: 'https://hooks.slack.com/services/',
