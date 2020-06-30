@@ -20,12 +20,12 @@
           timeout(time: 30, unit: 'SECONDS') {
               def qg = waitForQualityGate()
               if (qg.status != 'OK') 
-                   // slackSend baseUrl: 'https://hooks.slack.com/services/',
-                   // channel: '#jenkins-pipeline-demo',
-                   // color: 'danger', 
-                   // message: 'SonarQube Analysis Failed', 
-                   // teamDomain: 'javahomecloud',
-                   // tokenCredentialId: 'slack-demo'
+                    slackSend baseUrl: 'https://hooks.slack.com/services/',
+                    channel: '#jenkins-pipeline-demo',
+                    color: 'danger', 
+                    message: 'SonarQube Analysis Failed', 
+                    teamDomain: 'javahomecloud',
+                    tokenCredentialId: 'slack-demo'
                   error "Pipeline aborted due to quality gate failure: ${qg.status}"
               
           }
